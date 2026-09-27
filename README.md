@@ -6,6 +6,20 @@ Aplicativo Android que monitora links em segundo plano e exibe alertas visuais a
 
 A proteção é silenciosa para links seguros - o usuário só é interrompido quando há perigo real.
 
+## Como Executar
+
+```bash
+# Clonar e abrir no Android Studio
+git clone <url-do-repositorio>
+```
+
+### Visualizar as telas com Compose Preview
+1. Abra o projeto na IDE Android Studio
+2. Aguarde a sincronização dos arquivos do Gradle
+3. Navegue até os arquivos das telas (especificado na seção de estrutura de arquivos desse README)
+4. Abra o arquivo com final "Screen"
+5. No canto superior direito do painel de código do Android Studio, mude o modo de exibição de Editor para Editor e Preview ou Preview
+
 ## Interface do Usuário
 
 | Tecnologia | Função                                                     |
