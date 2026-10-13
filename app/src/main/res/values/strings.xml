@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Navegação Segura</string>
+
+    <string name="accessibility_service_description">
+        O Assistente de Navegação Segura verifica links antes que você os acesse,
+        avisando quando algo parece perigoso. Ele não lê suas mensagens nem
+        armazena suas informações pessoais.
+    </string>
+
+    <string name="notif_title">Proteção ativa</string>
+    <string name="notif_text">Seu assistente de segurança está cuidando de você.</string>
+
+    <string name="mensagem_familiar_template">
+        Alerta de Segurança\n\n
+        %1$s recebeu um aviso sobre um link possivelmente perigoso no celular.\n\n
+        Por favor, entre em contato para ajudá-lo(a) a decidir o que fazer.\n\n
+        — Assistente de Navegação Segura
+    </string>
+
+</resources>

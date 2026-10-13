@@ -48,12 +48,12 @@ import androidx.compose.ui.unit.sp
 import br.ufms.assistente.navegacao.ui.theme.AssistenteNavegacaoTheme
 
 @Composable
-fun MainSreen(
+fun MainScreen(
     cadastroConcluido: Boolean,
     servicoAtivo: Boolean,
     nomeUsuario: String,
     nomeFamiliarSalvo: String,
-    onSalvarCadsatro: (nome: String, nomeFamiliar: String, tel: String) -> Unit,
+    onSalvarCadastro: (nome: String, nomeFamiliar: String, tel: String) -> Unit,
     onAtivarProtecao: () -> Unit,
     onEditarFamiliar: () -> Unit
 ) {
@@ -78,7 +78,7 @@ fun MainSreen(
         } else {
             FormularioCadastro(
                 nomeFamiliarSalvo = nomeFamiliarSalvo,
-                onSalvar = onSalvarCadsatro
+                onSalvar = onSalvarCadastro
             )
         }
     }
@@ -342,12 +342,12 @@ fun DialogoAjuda(onDismiss: () -> Unit) {
 @Composable
 private fun PreviewMainFormulario() {
     AssistenteNavegacaoTheme {
-        MainSreen(
+        MainScreen(
             cadastroConcluido = false,
             servicoAtivo = false,
             nomeUsuario = "",
             nomeFamiliarSalvo = "",
-            onSalvarCadsatro = { _, _, _ -> },
+            onSalvarCadastro = { _, _, _ -> },
             onAtivarProtecao = {},
             onEditarFamiliar = {}
         )
@@ -358,12 +358,12 @@ private fun PreviewMainFormulario() {
 @Composable
 private fun PreviewMainStatusAtivo() {
     AssistenteNavegacaoTheme {
-        MainSreen(
+        MainScreen(
             cadastroConcluido = true,
             servicoAtivo = true,
             nomeUsuario = "Maria",
             nomeFamiliarSalvo = "João",
-            onSalvarCadsatro = { _, _, _ -> },
+            onSalvarCadastro = { _, _, _ -> },
             onAtivarProtecao = {},
             onEditarFamiliar = {}
         )
@@ -374,12 +374,12 @@ private fun PreviewMainStatusAtivo() {
 @Composable
 private fun PreviewMainStatusInativo() {
     AssistenteNavegacaoTheme {
-        MainSreen(
+        MainScreen(
             cadastroConcluido = true,
             servicoAtivo = false,
             nomeUsuario = "Maria",
             nomeFamiliarSalvo = "João",
-            onSalvarCadsatro = { _, _, _ -> },
+            onSalvarCadastro = { _, _, _ -> },
             onAtivarProtecao = {},
             onEditarFamiliar = {}
         )
